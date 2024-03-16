@@ -4,7 +4,7 @@ import viteLogo from '/vite.svg';
 import './App.css';
 import Custom from './custom.jsx'
 
-function App() {                   // these functions are converted into objects by bable these functions then redered by render function by passing it in attr <Fun />
+function App() {                   // these functions are convertening into objects by bable these functions then redered by render function by passing it in attr <Fun />
   return (
     <>
     <h1>React js</h1>
