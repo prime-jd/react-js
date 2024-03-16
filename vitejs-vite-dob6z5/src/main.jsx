@@ -5,6 +5,6 @@ import './index.css'
 
 ReactDOM.createRoot(document.getElementById('root')).render(        // render() function takes the input of imported file methods or objects and create a virtual dom according to heirarchy of elements in function ,then its compares it with actual dom and applied required changes to its components with their lifecycle 
   <React.StrictMode>
-    <App />                                             
+    <App />                                                        
   </React.StrictMode>,
 )
