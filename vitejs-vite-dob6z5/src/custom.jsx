@@ -3,8 +3,14 @@
 // in jsx we can create desired html element by describing there functionalities
 
 
-function custom(){                    // this function 
+function Custom(){                    // this function helps to generate methods and return the html elements to main.jsx
+
+    const x = 45;                     // if we not use this tag(<>) it shows error because return can send only single component of tags at once
     return(
+        <>                          
         <h1>Ravi Shankar Tripathi</h1>
+        <p>value :{x}</p>
+        </>
     )
 }
+export default Custom; // we use export default to export single value from module as default export 
