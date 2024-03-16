@@ -7,7 +7,7 @@ function Custom(){                    // this function helps to generate methods
 
     const x = 45;                     // if we not use this tag(<>) it shows error because return can send only single component of tags at once
     return(
-        <>                          
+        <>                           
         <h1>Ravi Shankar Tripathi</h1>
         <p>value :{x}</p>
         </>
