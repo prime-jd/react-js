@@ -10,9 +10,9 @@ function App() {
   return (
     <>
       <p className='bg-green-600 p-4 rounded-lg hover:bg-blue-700 m-4 '>React With Tailwind</p>
-      <Card Name ={useName} />
+      <Card Name ={useName} />  
     </>
   )
 }
-
+// Here we insert directly objects variables directly 
 export default App
