@@ -9,8 +9,9 @@ function App() {
  let useName = "Ravi Shankar Tripathi"
   return (
     <>
-      <p className='bg-green-600 p-4 rounded-lg hover:bg-blue-700 m-4 '>React With Tailwind</p>
-      <Card Name ={useName} />  
+      <p className="px-4  bg-green-600 py-1 text-sm text-blue-600 font-semibold rounded-full border border-purple-200 hover:text-white hover:bg-purple-600 hover:border-transparent focus:outline-none focus:ring-2 focus:ring-purple-600 focus:ring-offset-50">React With Tailwind</p>
+      <Card Name ="Ravi Shankar Tripathi" work="Software Engineer" />  
+      <Card Name="Vishal Yadav"  work="Software Enginneer"/>
     </>
   )
 }
