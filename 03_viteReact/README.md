@@ -10,3 +10,26 @@ Currently, two official plugins are available:
 # Tailwind In Vite
 
 ## Installation
+terminal
+
+``` 
+   > npm create vite@latest my-project -- --template react
+   > cd my-project
+
+   > npm install -D tailwindcss postcss autoprefixer
+   > npx tailwindcss init -p
+```
+tailwindConfig.js
+``` javascript
+/** @type {import('tailwindcss').Config} */
+module.exports = {
+  content: [content: [
+    "./index.html",
+    "./src/**/*.{js,ts,jsx,tsx}",
+],
+  theme: {
+    extend: {},
+  },
+  plugins: [],
+}
+```
