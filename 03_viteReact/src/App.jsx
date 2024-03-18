@@ -6,11 +6,11 @@ import Card from './card'
 
 function App() {
   const [count, setCount] = useState(0)
-
+ let useName = "Ravi Shankar Tripathi"
   return (
     <>
       <p className='bg-green-600 p-4 rounded-lg hover:bg-blue-700 m-4 '>React With Tailwind</p>
-      <Card />
+      <Card Name ={useName} />
     </>
   )
 }
