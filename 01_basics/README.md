@@ -68,3 +68,15 @@ This section has moved here: [https://facebook.github.io/create-react-app/docs/d
 ### `npm run build` fails to minify
 
 This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+
+
+## if Problem on running vite occurs during npm run dev you have to install vite either locally or globally
+
+install vite locally
+```
+>npm install vite --save-dev
+```
+install vite globally
+```
+>npm install -g vite
+```
