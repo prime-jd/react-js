@@ -10,6 +10,8 @@ Currently, two official plugins are available:
 # HOOKS USING TO CREATE PROJECT 
 
 # 1. useState()
-A javascript library for building user Interface.</br>
-Used to integrate state variables to functional components.
+A javascript library for building user Interface.<br>
+Used to integrate state variables to functional components.<br>
+State variables are used to store and manage component-specific data that may change over time, causing the component to re-render with the updated data.
+
 
