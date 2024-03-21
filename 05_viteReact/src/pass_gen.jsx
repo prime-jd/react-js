@@ -2,7 +2,7 @@ import  { useState, useEffect, useCallback } from 'react';
 
 
 function Pass_gen(){
-    let [password, setPassword]= useState("")
+    let [password, setPassword]= useState("xyz")
     let [number, setNumber]= useState(false)
     let [character, setCharacter]= useState(false)
     let [length, setLength]= useState("4")
@@ -25,7 +25,10 @@ function Pass_gen(){
     useEffect(()=> { gen_pass},
     [length, number,character]);
     return(
-        <div className="bg-grey-400 bg">reactLogo</div>
+        <div className='border-2 p-6 bg-gray-400 border-black border-solid w-full h-36'>
+          <input type='text' className=' border-2 border-black'></input>
+          <button className=''>Copy</button>
+        </div>
 
     )
 }
