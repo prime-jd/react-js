@@ -1,15 +1,16 @@
-const { useState, useCallback, useEffect } = require("react")
+import  { useState, useEffect, useCallback } from 'react';
+
 
 function Pass_gen(){
-    const [password, setPassword]= useState("")
-    const [number, setNumber]= useState(false)
-    const [character, setCharacter]= useState(false)
-    const [length, setLength]= useState("4")
+    let [password, setPassword]= useState("")
+    let [number, setNumber]= useState(false)
+    let [character, setCharacter]= useState(false)
+    let [length, setLength]= useState("4")
 
-    const gen_pass = useCallback(()=> {
-        const ch = "ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz"
-        const num = "1234567890"
-        const spCh = "!@#$%^&*()_+<>?/}{][|"
+    let gen_pass = useCallback(()=> {
+        let ch = "ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz"
+        let num = "1234567890"
+        let spCh = "!@#$%^&*()_+<>?/}{][|"
         if(number==true)
           ch += num;
         if(character==true)
@@ -21,10 +22,10 @@ function Pass_gen(){
         setPassword(password);
     })[length, number, character];
 
-    useEffect(()=> { gen_pass()},
+    useEffect(()=> { gen_pass},
     [length, number,character]);
     return(
-        <div className="h-10 w-7"></div>
+        <div className="bg-grey-400 bg">reactLogo</div>
 
     )
 }
