@@ -44,7 +44,7 @@ function Pass_gen(){
 
     return(
       <>
-        <div className='border-2 p-6 bg-gray-200 border-black border-solid w-full h-46'>
+        <div className='border-2 p-6 bg-grey-500 border-black border-solid w-full h-46'>
           <h1 className='my-5 text-blue-600'><u><b>PASSWORD GENERATOR</b></u></h1>
           
           <div className='flex'>
