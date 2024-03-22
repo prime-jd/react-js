@@ -37,10 +37,12 @@ function Pass_gen(){
       <>
         <div className='border-2 p-6 bg-gray-200 border-black border-solid w-full h-46'>
           <h1 className='my-5 text-green-600'><u>PASSWORD GENERATOR</u></h1>
+          
           <div className='flex'>
-          <input type='text' placeholder='password' value={password} className=' border-2 border-black w-full px-2' onClick={copyPasswordToClipboard} readOnly />
-          <button className='outline-none bg-blue-700 text-white px-3 py-0.5 shrink-0'>copy</button>
+          <input type='text'ref={passwordRef} placeholder='password' value={password} className=' border-2 border-black w-full px-2' readOnly />
+          <button  className='outline-none bg-blue-700 text-white px-3 py-0.5 shrink-0' onClick={copyPasswordToClipboard}>copy</button>
           </div>
+          
           <div className='flex'>
           <div className='flex m-5'>
             <input type='range' className='cursor-pointer' onChange={(e)=>setLength(e.target.value)} min={0} max={100} value={length}></input>
