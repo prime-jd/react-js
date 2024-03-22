@@ -6,6 +6,7 @@ function Pass_gen(){
     let [number, setNumber]= useState(false)
     let [character, setCharacter]= useState(false)
     let [length, setLength]= useState(4)
+    const [counter, setCounter] = useState(0);
     const passwordRef = useRef(null)
 
     const gen_pass = useCallback(()=> {
@@ -33,14 +34,22 @@ function Pass_gen(){
     useEffect(()=> { gen_pass() },
     [length, number, character ,gen_pass])
 
+
+    
+
+    const handleRefresh = () => {
+        gen_pass()
+        setCounter(prevCounter => prevCounter + 1); // For example, increment a counter
+    };
+
     return(
       <>
         <div className='border-2 p-6 bg-gray-200 border-black border-solid w-full h-46'>
-          <h1 className='my-5 text-green-600'><u>PASSWORD GENERATOR</u></h1>
+          <h1 className='my-5 text-blue-600'><u><b>PASSWORD GENERATOR</b></u></h1>
           
           <div className='flex'>
           <input type='text'ref={passwordRef} placeholder='password' value={password} className=' border-2 border-black w-full px-2' readOnly />
-          <button  className='outline-none bg-blue-700 text-white px-3 py-0.5 shrink-0' onClick={copyPasswordToClipboard}>copy</button>
+          <button  className='outline-none bg-blue-500 text-white px-3 py-0.5 shrink-0 hover:bg-700 transition-transform transform rounded-lg border-2 hover:scale-90' onClick={copyPasswordToClipboard}>copy</button>
           </div>
           
           <div className='flex'>
@@ -61,7 +70,7 @@ function Pass_gen(){
           </div>
                
         </div>
-        <button className='justify-centre m-5 text-white border-black border-2 p-2 bg-blue-500'>Refresh</button>
+        <button className='justify-centre rounded-lg hover:scale-110 m-5 text-white border-black border-2 p-2 bg-blue-500' onClick={handleRefresh}>Refresh</button>
         </>
       
     )
