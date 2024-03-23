@@ -23,7 +23,7 @@ tailwindConfig.js
 ``` javascript
 /** @type {import('tailwindcss').Config} */
 module.exports = {
-  content: [content: [
+  content: [
     "./index.html",
     "./src/**/*.{js,ts,jsx,tsx}",
 ],
