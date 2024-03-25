@@ -13,3 +13,11 @@ In React, "React Router" is a popular library used for handling routing in web a
 ```
 npm install react-router-dom
 ```
+# various functionalities used in this module
+Link, NavLink
+Route
+RouterProvider
+createBrowserRouter
+createRouteElements
+Loader
+userid
