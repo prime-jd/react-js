@@ -42,7 +42,7 @@ export default function Header() {
                                 </NavLink>
                             </li>
                             <li>
-                                <NavLink to="/About"
+                                <NavLink to="/about"
                                     className={({isActive}) =>
                                         `block py-2 pr-4 ${isActive ? "text-orange-400" : "text-grey-400"} pl-3 duration-200 border-b border-gray-100 hover:bg-gray-50 lg:hover:bg-transparent lg:border-0 hover:text-orange-700 lg:p-0`
                                     }
@@ -51,12 +51,21 @@ export default function Header() {
                                 </NavLink>
                             </li>
                             <li>
-                                <NavLink to= "/Contact"
+                                <NavLink to= "/contact"
                                     className={({isActive}) =>
                                         `block py-2 pr-4 ${isActive ? "text-orange-400" : "text-grey-400"} pl-3 duration-200 border-b border-gray-100 hover:bg-gray-50 lg:hover:bg-transparent lg:border-0 hover:text-orange-700 lg:p-0`
                                     }
                                 >
                                     Contact
+                                </NavLink>
+                            </li>
+                            <li>
+                                <NavLink to="/github"
+                                    className={({isActive}) =>
+                                        `block py-2 pr-4 ${isActive ? "text-orange-400" : "text-grey-400"} pl-3 duration-200 border-b border-gray-100 hover:bg-gray-50 lg:hover:bg-transparent lg:border-0 hover:text-orange-700 lg:p-0`
+                                    }
+                                >
+                                    Github
                                 </NavLink>
                             </li>
                             
