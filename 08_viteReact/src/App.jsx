@@ -8,9 +8,9 @@ function App() {
 
   return (
     <>
-      <h1 className='text-green-600'>Context API</h1>
+      <h1 className='text-white bg-blue-600 p-2'>Context API</h1>
     </>
   )
 }
 
-export default App
+export default App;
