@@ -9,7 +9,7 @@ import Three from './Components/Three';
 
 function App() {
 const x = {name : "Ravi", work : "Fresher" } ; 
-const { setUser} = useContext(UserContext)
+const {setUser} = useContext(UserContext)
 useEffect(()=>setUser(x) ,[])
   return (
     <>
