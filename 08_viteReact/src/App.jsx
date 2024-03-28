@@ -3,8 +3,9 @@
 import './App.css'
 import { useContext, useEffect } from "react";
 import UserContextProvider from "./Context/UserContextProvider";
-import One from "./components/One";
+import One from "./Components/One";
 import UserContext from "./Context/UserContext";
+import Three from './Components/Three';
 
 function App() {
 const x = {name : "Ravi", work : "Fresher" } ; 
