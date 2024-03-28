@@ -1,14 +1,22 @@
-import { useState } from 'react'
-import reactLogo from './assets/react.svg'
-import viteLogo from '/vite.svg'
+// import One from './components/One'
+
 import './App.css'
+import { useContext, useEffect } from "react";
+import UserContextProvider from "./Context/UserContextProvider";
+import One from "./components/One";
+import UserContext from "./Context/UserContext";
 
 function App() {
-  const [count, setCount] = useState(0)
-
+const x = {name : "Ravi", work : "Fresher" } ; 
+const { setUser} = useContext(UserContext)
+useEffect(()=>setUser(x) ,[])
   return (
     <>
-      <h1 className='text-white bg-blue-600 p-2'>Context API</h1>
+      <UserContextProvider>
+      <div>Context APi</div>
+      <One />
+      <Three />
+      </UserContextProvider>  
     </>
   )
 }
