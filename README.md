@@ -15,5 +15,5 @@
 07 React Routers
 08 Context API
 09 Router Practice Project
-10 Context API Project
+10 Context API Project (Theme Toggler)
 ```
