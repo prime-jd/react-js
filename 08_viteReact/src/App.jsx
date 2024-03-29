@@ -1,25 +1,23 @@
-// import One from './components/One'
-
-import './App.css'
-import { useContext, useEffect } from "react";
-import UserContextProvider from "./Context/UserContextProvider";
+// App.js
+import React, { useContext, useEffect } from "react";
+import { UserContext } from "./Context/UserContextProvider";
 import One from "./Components/One";
-import UserContext from "./Context/UserContext";
-import Three from './Components/Three';
+import Three from "./Components/Three";
 
 function App() {
-const x = {name : "Ravi", work : "Fresher" } ; 
-const {setUser} = useContext(UserContext)
-useEffect(()=>setUser(x) ,[])
+  const { setUser } = useContext(UserContext);
+
+  useEffect(() => {
+    const x = { name: "Ravi", work: "Fresher" };
+    setUser(x);
+  }, [setUser]);
+
   return (
     <>
-      <UserContextProvider>
-      <div>Context APi</div>
+      <div>Context API</div>
       <One />
-      <Three />
-      </UserContextProvider>  
     </>
-  )
+  );
 }
 
 export default App;

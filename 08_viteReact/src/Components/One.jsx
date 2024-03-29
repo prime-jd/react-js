@@ -1,14 +1,17 @@
-import React from 'react'
-import Two from './Two'
+// One.jsx
+import React, { useContext } from 'react';
+import { UserContext } from '../Context/UserContextProvider';
+import Three from './Three';
 
 function One() {
-    return (
-        <>
-        <Two />
-        <div>first component</div>
-        </>
-    )
+
+
+  return (
+    <div>
+      <h2>This is One Component</h2>
+       <Three />
+    </div>
+  );
 }
 
 export default One;
-// from this example we can see that the props is not accessed by Three.jsx instead of nesting hence we have to pass props to both one and two and threeif props was provided by App.jsx

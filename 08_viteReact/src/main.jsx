@@ -1,10 +1,11 @@
-import React from 'react'
-import ReactDOM from 'react-dom/client'
-import App from './App.jsx'
-import './index.css'
+import React from 'react';
+import ReactDOM from 'react-dom';
+import App from './App';
+import { UserContextProvider } from './Context/UserContextProvider';
 
-ReactDOM.createRoot(document.getElementById('root')).render(
-  <React.StrictMode>
+ReactDOM.render(
+  <UserContextProvider>
     <App />
-  </React.StrictMode>,
-)
+  </UserContextProvider>,
+  document.getElementById('root')
+);
