@@ -14,4 +14,6 @@
 06 custom hooks and fetch api data through these hooks
 07 React Routers
 08 Context API
+09 Router Practice Project
+10 Context API Project
 ```
