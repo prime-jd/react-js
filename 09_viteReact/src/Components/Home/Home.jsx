@@ -3,9 +3,10 @@ import React from 'react'
 export default function Home() {
     return (
         <>
+       
         <div className=' m-auto'>
 <header className='m-5'>
-  <h1 className=' text-5xl '>Welcome to Ravi Shankar Tripathi's Personal Website</h1>
+  <h1 className=' text-5xl '><b>Welcome to Ravi Shankar Tripathi's Personal Website ! </b></h1>
 </header>
 
 <div class="border-t border-gray-700"></div>
@@ -35,6 +36,7 @@ export default function Home() {
   <p className='py-4'>If you'd like to get in touch, please feel free to reach out to me via email at [your email address]. I'm always open to new opportunities, collaborations, or simply connecting with like-minded individuals.</p>
 </section>
 </div>
+
         </>
     )
 }
