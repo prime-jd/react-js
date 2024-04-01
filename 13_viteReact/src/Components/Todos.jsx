@@ -5,9 +5,10 @@ import {removeTodo} from '../Features/Todo/TodoSlice'
 function Todos() {
     const todos = useSelector(state => state.todos)
     const dispatch = useDispatch()
-     useEffect(()=>{
+     
+    useEffect(()=>{
       localStorage.setItem('todos',JSON.stringify(todos))
-    },[todos])
+    },[])
 
   return (
     <>
