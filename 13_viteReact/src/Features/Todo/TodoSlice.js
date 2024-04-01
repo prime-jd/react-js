@@ -16,7 +16,7 @@ export const TodoSlice = createSlice({
             id :nanoid(),
             text : action.payload }
             state.todos.push(todo)
-            localStorage.setItem('todo', JSON.stringify(state.todos));
+            
             
         },
         removeTodo : (state,action)=>{
