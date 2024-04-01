@@ -13,8 +13,6 @@ function AddTodo() {
         setInput('')
 
     }
-    
-    
 
     return (
         <form onSubmit={add} className="space-x-3 mt-12">

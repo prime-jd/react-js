@@ -1,10 +1,14 @@
-import React from 'react'
+import React, {useEffect} from 'react'
 import { useSelector, useDispatch } from 'react-redux'
 import {removeTodo} from '../Features/Todo/TodoSlice'
 
 function Todos() {
     const todos = useSelector(state => state.todos)
     const dispatch = useDispatch()
+     useEffect(()=>{
+      const todos = useSelector((state)=>state.todos)
+      localStorage.setItem('todos',JSON.stringify(todos))
+    },[todos])
 
   return (
     <>
