@@ -16,14 +16,14 @@ export const TodoSlice = createSlice({
             id :nanoid(),
             text : action.payload }
             state.todos.push(todo)
-            
+            window.localStorage.setItem("todos",JSON.stringify(state.todos))
             
         },
         removeTodo : (state,action)=>{
-            state.todos.filter((todo)=todo.id == action.payload )
-            localStorage.setItem('todo', JSON.stringify(state.todos));
+            state.todos = state.todos.filter((todo) => todo.id !== action.payload )
+            window.localStorage.setItem("todos",JSON.stringify(state.todos))
 
-        }
+        },
        
     }
 })
