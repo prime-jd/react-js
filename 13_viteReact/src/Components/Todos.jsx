@@ -6,7 +6,6 @@ function Todos() {
     const todos = useSelector(state => state.todos)
     const dispatch = useDispatch()
      useEffect(()=>{
-      const todos = useSelector((state)=>state.todos)
       localStorage.setItem('todos',JSON.stringify(todos))
     },[todos])
 
