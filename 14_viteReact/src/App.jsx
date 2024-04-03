@@ -1,4 +1,4 @@
-import { useState } from 'react'
+import { useState,useEffect } from 'react'
 import reactLogo from './assets/react.svg'
 import viteLogo from '/vite.svg'
 import './App.css'
@@ -6,7 +6,8 @@ import { useDispatch } from 'react-redux'
 import authService from './appWrite/Auth'
 import { login,logout } from './store/authSlice'
 import { Outlet } from 'react-router-dom'
-import {Header,Footer} from './components'
+import Header from './components/Header/Header'
+import Footer from './components/Footer/Footer'
 
 
 function App() {
@@ -28,15 +29,16 @@ function App() {
   },[])
 
 
-  return !loading ? (
+  return (!loading) ? (
     <div className='min-h-screen flex flex-wrap content-between bg-gray-500'>
+      
       <div className='w-full block'>
         <Header />
-        header
+        
         <main>
           {/* <Outlet /> */}
         </main>
-        footer
+
         <Footer />
       </div>
     </div>
