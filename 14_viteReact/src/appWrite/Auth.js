@@ -2,7 +2,7 @@ import conf from "../conf/conf"
 import { Client, Account, ID } from "appwrite";
 
 
-export class authService{
+export class AuthService{
     client = new Client();
     account;
 
@@ -38,16 +38,31 @@ export class authService{
             return await this.account.createEmailPasswordSession(email,password)
             
         } catch (error) {
-            
+           throw error; 
         }
     }
 
+    // get current user
     async getCurrentUser(){
         try {
             return await this.account.get();
         } catch (error) {
             console.log("Appwrite service :: getCurrentUser :: error",error);
         }
+        return null;
+    }
+
+    //logout functionality
+    async logout(){
+        try {
+            await this.account.deleteSessions('current')
+        } catch (error) {
+            console.log("appwrite sessions :: logout :: error",error)
+        }
     }
 }
+
+const authService = new AuthService() 
+
+export default authService
  
