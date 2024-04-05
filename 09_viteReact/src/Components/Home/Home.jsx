@@ -9,7 +9,7 @@ export default function Home() {
   <h1 className=' text-5xl '><b>Welcome to Ravi Shankar Tripathi's Personal Website ! </b></h1>
 </header>
 
-<div class="border-t border-gray-700"></div>
+<div className="border-t border-gray-700"></div>
 
 <section className='m-5'>
   <h2 className=' text-4xl'>About Me</h2>

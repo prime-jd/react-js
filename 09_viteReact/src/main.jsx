@@ -7,6 +7,7 @@ import Home from './Components/Home/Home.jsx'
 import App from './App.jsx'
 import Contact from './Components/Contacts/Contact.jsx'
 import Github, { LoginInfo } from './Components/Github/Github.jsx'
+import Login from './Components/Login.jsx'
 
 
 const router = createBrowserRouter(
@@ -16,6 +17,7 @@ const router = createBrowserRouter(
       <Route path='todo' element= {<App />} />
       <Route path='contact' element= {<Contact/>}/>
       <Route path='github' loader={LoginInfo} element= {<Github />}/>
+      <Route path='login'  element={<Login />} />
     </Route>
   )
 )
