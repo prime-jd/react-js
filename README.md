@@ -16,7 +16,14 @@
 08 Context API
 09 Router Practice Project
 10 Context API Project (Theme Toggler)
+<<<<<<< HEAD
 11 Todo with Context API 
 12 Practice with project
 13 React Redux and Redux Toolkit
+=======
+11 Todo with Context API
+12 React Redux and Redux Toolkit
+13 Practice with project
+14 
+>>>>>>> 057d63f88664f9c54240b60ca1253366928a4cdc
 ```
