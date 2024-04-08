@@ -8,6 +8,7 @@ import App from './App.jsx'
 import Contact from './Components/Contacts/Contact.jsx'
 import Github, { LoginInfo } from './Components/Github/Github.jsx'
 import Login from './Components/Login.jsx'
+import Google_search, { GoogleInfo } from './Components/Google_search.jsx'
 
 
 const router = createBrowserRouter(
@@ -18,6 +19,7 @@ const router = createBrowserRouter(
       <Route path='contact' element= {<Contact/>}/>
       <Route path='github' loader={LoginInfo} element= {<Github />}/>
       <Route path='login'  element={<Login />} />
+      <Route path='gpt' loader={GoogleInfo}  element={<Google_search />} />
     </Route>
   )
 )
