@@ -68,6 +68,16 @@ export default function Header() {
                                     Github
                                 </NavLink>
                             </li>
+
+                            <li>
+                                <NavLink to="/gpt"
+                                    className={({isActive}) =>
+                                        `block py-2 pr-4 ${isActive ? "text-orange-400" : "text-white"} pl-3 duration-200 border-b border-gray-100 lg:hover:bg-transparent lg:border-0 lg:p-0`
+                                    }
+                                >
+                                    gpt
+                                </NavLink>
+                            </li>
                             
                             
                         </ul>
