@@ -4,7 +4,7 @@ import Input from './components/Input';
 import { useForm } from 'react-hook-form';
 
 function App() {
-    const { register, handleSubmit, handleChange, data } = useForm();
+    const { register, handleSubmit} = useForm();
     const [input, setInput] = useState('')
     const onSubmit = (data) => {
         console.log(data.name);
@@ -19,7 +19,7 @@ function App() {
                     label="Name"
                     type="text"
                     placeholder="Enter your name"
-                    onChange={handleChange}
+                    
                     {...register("name")}
                 />
                 <button type="submit">Submit</button>
