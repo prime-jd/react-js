@@ -1,14 +1,15 @@
-import React from 'react';
+import React, { useState } from 'react';
 import './App.css';
 import Input from './components/Input';
 import { useForm } from 'react-hook-form';
 
 function App() {
-    const { register, handleSubmit, handleChange, values } = useForm();
-
+    const { register, handleSubmit, handleChange, data } = useForm();
+    const [input, setInput] = useState('')
     const onSubmit = (data) => {
-        console.log(data);
-        console.log(values); // Log the entire values object
+        console.log(data.name);
+        setInput(data.name)
+        //console.log(values); // Log the entire values object
     };
 
     return (
@@ -23,6 +24,7 @@ function App() {
                 />
                 <button type="submit">Submit</button>
             </form>
+            <div>{input}</div>
         </div>
     );
 }
