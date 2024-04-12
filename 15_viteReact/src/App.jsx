@@ -1,19 +1,31 @@
-import { useState } from 'react'
-import reactLogo from './assets/react.svg'
-import viteLogo from '/vite.svg'
-import './App.css'
-import Input from './components/Input'
+import React from 'react';
+import './App.css';
+import Input from './components/Input';
+import { useForm } from 'react-hook-form';
 
 function App() {
-  const [userName, setUsername] = useState('')
+    const { register, handleSubmit, handleChange, values} = useForm();
 
-  return (
-    <>
-     <div>Input Component</div>
-     <Input label="name" type="text"  placeholder="name" ref={(e)=>setUsername(e.target.value)} />
-     <div>{userName}</div>
-    </>
-  )
+    const onSubmit = (data) => {
+        console.log(data);
+        console.log(values.name)
+    };
+
+    return (
+        <div className="App">
+            <form onSubmit={handleSubmit(onSubmit)}>
+                <Input
+                    label="Name"
+                    type="text"
+                    placeholder="Enter your name"
+                    onChange={handleChange}
+                    {...register("name")}
+                />
+                <button type="submit">Submit</button>
+            </form>
+            
+        </div>
+    );
 }
 
-export default App
+export default App;
