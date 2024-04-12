@@ -22,6 +22,6 @@
 11 Todo with Context API
 12 React Redux and Redux Toolkit
 13 Practice with project
-14 Blog
+14 Blog Project
 
 ```
