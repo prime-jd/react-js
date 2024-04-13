@@ -1,11 +1,11 @@
 import React, {useState, useEffect} from 'react'
 import { Container, PostCard } from '../components'
-import appwriteService from "../appwrite/config";
+import service from "../appWrite/config";
 
 function AllPosts() {
     const [posts, setPosts] = useState([])
     useEffect(() => {}, [])
-    appwriteService.getPosts([]).then((posts) => {
+    service.getPosts([]).then((posts) => {
         if (posts) {
             setPosts(posts.documents)
         }
