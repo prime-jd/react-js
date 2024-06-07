@@ -10,6 +10,7 @@
     "preview": "vite preview"
   },
   "dependencies": {
+    "@heroicons/react": "^2.1.3",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
     "react-router-dom": "^6.22.3"
@@ -25,6 +26,10 @@
     "eslint-plugin-react-refresh": "^0.4.6",
     "postcss": "^8.4.38",
     "tailwindcss": "^3.4.3",
+<<<<<<< HEAD
     "vite": "^5.2.12"
+=======
+    "vite": "^5.2.11"
+>>>>>>> 68647007207d6db5d9ee736870ad3efb3ddf2d72
   }
 }
