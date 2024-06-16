@@ -73,7 +73,6 @@ export class Service{
                 conf.appwriteDatabaseId,
                 conf.appwriteCollectionId,
                 slug,
-            
             )
         } catch (error) {
             console.log("Appwrite serive :: getPost :: error", error);
