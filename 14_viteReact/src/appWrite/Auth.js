@@ -40,8 +40,7 @@ export class AuthService {
 
     async  getCurrentUser() {
         try {
-          const { account } = await createSessionClient();
-          return await account.get();
+          return this.account.get();
         } catch (error) {
           return null;
         }
