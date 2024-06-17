@@ -99,7 +99,7 @@ export default function PostForm({ post }) {
                     {...register("image", { required: !post })}
                 />
                 {post && (
-                    <div className="w-full mb-4">
+                    <div className="w-36 mb-4">
                         <img
                             src={appwriteService.getFilePreview(post.featuredImage)}
                             alt={post.title}
