@@ -23,5 +23,4 @@
 12 React Redux and Redux Toolkit
 13 Practice with project
 14 Blog Project using appwrite
-15 
 ```
