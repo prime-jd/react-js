@@ -27,6 +27,15 @@ Student (fetches real-time class schedule and authorizes record by entering OTP)
           </a>
             </div>
           </div>
+          <div className="w-full md:w-1/2 lg:w-1/3 p-4">
+            <div className="bg-white rounded shadow p-6">
+              <h3 className="text-2xl font-bold mb-2">MegaBlog</h3>
+              <p className="text-lg">Developed a React blog app for authenticated users to manage images/posts, with public viewing and real-time updates via a backend API. </p>
+              <a href="https://cms-pi-gules.vercel.app/" target="_blank" rel="noopener noreferrer" className="text-blue-700 text-xl hover:text-gray-400">
+            visit
+          </a>
+            </div>
+          </div>
         </div>
       </div>
     </section>
